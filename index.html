@@ -71,10 +71,12 @@
       <p>Hier erfährst du wo für man den Support benutzen kann ⬇</p>
       <ul>
         <li>Der Support kann für ein Bugg-Report genutz werden. 🐞</li>
+        <p> </p>
         <li>
           Er kann auch als Hilfe für die nutzung des Bots genutzt werden (FAQ).
           🤝
         </li>
+        <p> </p>
         <li>
           Der Support kann natürlich auch für allgemeine Fragen und Anliegen
           genutzt werden. 💬
@@ -91,20 +93,30 @@
         onsubmit="return sendEmail();"
       >
         <label for="name">👤 | Dein Name (Discord-Name):</label>
-        <input type="text" id="name" name="name" />
+        <input
+          class="linC"
+          placeholder="Your Discord-Name"
+          type="text"
+          id="name"
+          name="name"
+        />
         <label for="message">📧 | Deine Naricht:</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+        <textarea
+          class="linC"
+          placeholder="Your Discord-Name"
+          id="message"
+          name="message"
+          rows="4"
+        ></textarea>
         <button class="send-button">Send the Message📬</button>
       </form>
     </section>
 
     <script>
-      // Überprüfen, ob der Benutzer bereits den Dark Mode aktiviert hat
       if (localStorage.getItem("darkMode") === "enabled") {
         enableDarkMode();
       }
 
-      // Funktion zum Umschalten zwischen Dark Mode und Light Mode
       function toggleTheme() {
         if (localStorage.getItem("darkMode") === "enabled") {
           disableDarkMode();
@@ -145,13 +157,11 @@
           return false;
         }
 
-        // Überprüfe, ob erforderliche Felder ausgefüllt sind
         if (!message) {
           alert("Bitte gib eine Nachricht an 📧");
           return false;
         }
 
-        // Erstelle eine E-Mail-URL mit dem E-Mail-Client des Benutzers
         var mailtoLink =
           "mailto:ninoos.mail@gmail.com" +
           "?subject=Supportanfrage von " +
@@ -159,24 +169,19 @@
           "&body=" +
           message;
 
-        // Öffne den E-Mail-Client des Benutzers mit der vorbereiteten E-Mail
         window.location.href = mailtoLink;
 
-        // Navigiere zur gewünschten Website nach dem Versenden der E-Mail
         window.location.href = "https://nino-os.github.io/dashboard/";
 
-        // Verhindere das Standardformular-Submit-Verhalten
         return false;
       }
     </script>
 
     <script>
-      // Überprüfen, ob der Benutzer bereits den Dark Mode aktiviert hat
       if (localStorage.getItem("darkMode") === "enabled") {
         enableDarkMode();
       }
 
-      // Funktion zum Umschalten zwischen Dark Mode und Light Mode
       function toggleTheme() {
         if (localStorage.getItem("darkMode") === "enabled") {
           disableDarkMode();
@@ -204,18 +209,17 @@
         }
       }
 
-      // Event Listener für die Links hinzufügen
       document.addEventListener("DOMContentLoaded", function () {
         const link1 = document.getElementById("FAQ");
         const link2 = document.getElementById("Kontakt");
 
         link1.addEventListener("click", (event) => {
-          event.preventDefault(); // Verhindert das Standardverhalten des Links
+          event.preventDefault();
           scrollToElement(".section1");
         });
 
         link2.addEventListener("click", (event) => {
-          event.preventDefault(); // Verhindert das Standardverhalten des Links
+          event.preventDefault();
           scrollToElement(".section2");
         });
       });

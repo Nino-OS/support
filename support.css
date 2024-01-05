@@ -1,14 +1,9 @@
-/* support.css */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(
-    to top,
-    #3f51b5,
-    #9c27b0
-  ); /* Hintergrundverlauf von Blau zu Lila */
-  color: white; /* Textfarbe auf Weiß gesetzt */
+  background: linear-gradient(to top, #3f51b5, #9c27b0);
+  color: white;
 }
 
 header {
@@ -80,78 +75,67 @@ footer {
   border-top: 1px solid #9c27b0;
 }
 
-/* Formular im Dark Mode */
 body.dark-theme form label {
-  color: white; /* Farbe der Formularbeschriftungen im Dark Mode */
+  color: white;
 }
 
 body.dark-theme form input,
 body.dark-theme form textarea {
-  background: #1a237e; /* Hintergrund der Formularfelder im Dark Mode */
-  color: white; /* Textfarbe der Formularfelder im Dark Mode */
-  border: 1px solid #6a1b9a; /* Randfarbe der Formularfelder im Dark Mode */
+  background: #1a237e;
+  color: white;
+  border: 1px solid #6a1b9a;
 }
 
 body.dark-theme form button {
-  background: #1a237e; /* Hintergrund des Buttons im Dark Mode */
-  color: white; /* Textfarbe des Buttons im Dark Mode */
+  background: #1a237e;
+  color: white;
 }
 
 body.dark-theme form button:hover {
-  background: #303f9f; /* Hintergrund des Buttons im Dark Mode beim Hovern */
+  background: #303f9f;
 }
 
-/* Text im Dark Mode für den Abschnitt "Häufig gestellte Fragen (FAQ)" */
 body.dark-theme #section1 {
-  color: white; /* Ändern Sie die Textfarbe im Dark Mode auf Weiß */
+  color: white;
 }
 
-/* Auswahl (Selection) im Dark Mode für Textbereiche (Textarea) im Abschnitt "Häufig gestellte Fragen (FAQ)" */
 body.dark-theme #section1 textarea::selection {
-  background: black; /* Hintergrundfarbe der Auswahl im Dark Mode */
-  color: white; /* Textfarbe der Auswahl im Dark Mode */
+  background: black;
+  color: white;
 }
 
-/* Text im Dark Mode für den Abschnitt "Häufig gestellte Fragen (FAQ)" */
 body.dark-theme #section1 {
-  color: white; /* Ändern Sie die Textfarbe im Dark Mode auf Weiß */
-  background: black; /* Ändern Sie den Hintergrund im Dark Mode auf Schwarz */
+  color: white;
+  background: black;
 }
 
-/* Auswahl (Selection) im Dark Mode für Textbereiche (Textarea) im Abschnitt "Häufig gestellte Fragen (FAQ)" */
 body.dark-theme #section1 textarea::selection {
-  background: black; /* Hintergrundfarbe der Auswahl im Dark Mode */
-  color: white; /* Textfarbe der Auswahl im Dark Mode */
+  background: black;
+  color: white;
 }
 
-/* Text im Dark Mode für den Abschnitt "Kontakt" */
 body.dark-theme #section2 {
-  color: white; /* Ändern Sie die Textfarbe im Dark Mode auf Weiß */
-  background: black; /* Ändern Sie den Hintergrund im Dark Mode auf Schwarz */
+  color: white;
+  background: black;
 }
 
-/* Auswahl (Selection) im Dark Mode für Textbereiche (Textarea) im Abschnitt "Kontakt" */
 body.dark-theme #section2 textarea::selection {
-  background: black; /* Hintergrundfarbe der Auswahl im Dark Mode */
-  color: white; /* Textfarbe der Auswahl im Dark Mode */
+  background: black;
+  color: white;
 }
 
-/* Text im Dark Mode für den Abschnitt "Willkommen beim Support" */
 body.dark-theme header {
-  color: white; /* Ändern Sie die Textfarbe im Dark Mode auf Weiß */
+  color: white;
 }
 
-/* Auswahl (Selection) im Dark Mode für den Textbereich (Header) im Abschnitt "Willkommen beim Support" */
 body.dark-theme header::selection {
-  background: black; /* Hintergrundfarbe der Auswahl im Dark Mode */
-  color: white; /* Textfarbe der Auswahl im Dark Mode */
+  background: black;
+  color: white;
 }
-/* BUTTON*/
 
-/* BUTTON im Dark Mode */
 body.dark-theme .theme-toggle {
-  background: #000000; /* Hintergrundfarbe des Buttons im Dark Mode */
-  color: #ffffff; /* Textfarbe des Buttons im Dark Mode */
+  background: #000000;
+  color: #ffffff;
 }
 
 .theme-toggle {
@@ -173,13 +157,13 @@ body.dark-theme .theme-toggle {
 }
 
 .theme-toggle.deactive {
-  background: #000000; /* Hintergrundfarbe im Dark Mode */
-  color: #ffffff; /* Textfarbe im Dark Mode */
+  background: #000000;
+  color: #ffffff;
 }
 
 .theme-toggle.active {
-  background: #ffffff; /* Hintergrundfarbe im Dark Mode */
-  color: #000000; /* Textfarbe im Dark Mode */
+  background: #ffffff;
+  color: #000000;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
@@ -251,10 +235,6 @@ body.dark-theme .theme-toggle {
   opacity: 1;
 }
 
-/* ... (vorheriger CSS-Code) */
-
-/* BUTTON*/
-
 .theme-toggle {
   border: none;
   width: 80px;
@@ -274,13 +254,13 @@ body.dark-theme .theme-toggle {
 }
 
 .theme-toggle.deactive {
-  background: #000000; /* Hintergrundfarbe im Dark Mode */
-  color: #ffffff; /* Textfarbe im Dark Mode */
+  background: #000000;
+  color: #ffffff;
 }
 
 .theme-toggle.active {
-  background: #ffffff; /* Hintergrundfarbe im Dark Mode */
-  color: #000000; /* Textfarbe im Dark Mode */
+  background: #ffffff;
+  color: #000000;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
@@ -378,7 +358,7 @@ body.dark-theme .theme-toggle {
   font-weight: 500;
   font-size: 16px;
   border: none;
-  cursor: pointer;
+  cursor: progress;
   transition: all 0.3s ease;
 }
 .send-button:hover {
@@ -388,13 +368,13 @@ body.dark-theme .theme-toggle {
 
 body.dark-theme .send-button {
   background: #03b544;
-  color: #ffffff; /* Textfarbe des Buttons im Dark Mode */
+  color: #ffffff;
 }
 
 body.dark-theme .send-button:hover {
   cursor: alias;
   background: rgba(0, 164, 98, 0.709);
-  color: #ffffff; /* Textfarbe des Buttons im Dark Mode */
+  color: #ffffff;
 }
 
 .main-site-back {
@@ -418,7 +398,7 @@ body.dark-theme .send-button:hover {
 
 body.dark-theme .main-site-back {
   background: #ab0000;
-  color: #ffffff; /* Textfarbe des Buttons im Dark Mode */
+  color: #ffffff;
 }
 
 section {
@@ -455,19 +435,25 @@ section {
   color: black;
 }
 
+.linC {
+  cursor: text;
+}
+
 @media (width < 600px) {
   .section {
     display: none;
   }
 
   .section1 {
-    width: 300px;
-    font-size: 14px;
+    width: 280px;
+    font-size: 12px;
+    cursor: default;
   }
 
   .section2 {
-    width: 300px;
+    width: 280px;
     font-size: 14px;
+    cursor: default;
   }
 
   .title-size {
@@ -490,13 +476,13 @@ section {
 
   .theme-toggle::before {
     cursor: pointer;
-    content: "☀️"; /* Standard-Icon (Sonnensymbol) */
+    content: "☀️";
     font-size: 16px;
   }
 
   body.dark-theme .theme-toggle::before {
     cursor: pointer;
-    content: "🌙"; /* Icon im Dark Mode (Mondsymbol) */
+    content: "🌙";
     font-size: 16px;
   }
 }
@@ -515,10 +501,12 @@ section {
   .section1 {
     width: 1200px;
     font-size: 14px;
+    cursor: default;
   }
 
   .section2 {
     width: 1200px;
     font-size: 14px;
+    cursor: default;
   }
 }
