@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -237,13 +239,13 @@ body.dark-theme .theme-toggle {
 
 .theme-toggle {
   border: none;
-  width: 80px;
-  height: 40px;
-  border-radius: 20px;
+  width: 98px;
+  height: 60px;
+  border-radius: 30px;
   cursor: e-resize;
   position: fixed;
   right: 10px;
-  top: 40px;
+  top: 60px;
   transform: translateY(-50%);
   transition: background-color 0.3s;
   display: flex;
@@ -262,8 +264,6 @@ body.dark-theme .theme-toggle {
   background: #ffffff;
   color: #000000;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 .container {
   max-width: 400px;
@@ -381,18 +381,18 @@ body.dark-theme .send-button:hover {
   background: #ff2b2b;
   color: #000000;
   border: none;
-  width: 90px;
-  height: 40px;
-  border-radius: 20px;
+  width: 120px;
+  height: 60px;
+  border-radius: 30px;
   cursor: pointer;
   position: fixed;
   left: 10px;
-  top: 40px;
+  top: 66px;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
-  padding: 0 10px;
-  font-size: 20px;
+  padding: 0 15px;
+  font-size: 24px;
   justify-content: space-between;
 }
 
@@ -462,28 +462,33 @@ section {
   }
 
   .main-site-back {
-    top: 26px;
-    width: 48px;
-    height: 28px;
-    font-size: 0;
+    top: 28px;
+    width: 54px;
+    height: 40px;
+    font-size: 1;
+    position: absolute;
+  }
+
+  .backfont {
+    display: none;
   }
 
   .theme-toggle {
-    top: 26px;
-    width: 40px;
-    height: 30px;
+    top: 28px;
+    width: 42px;
+    height: 40px;
   }
 
   .theme-toggle::before {
     cursor: pointer;
     content: "☀️";
-    font-size: 16px;
+    font-size: 18px;
   }
 
   body.dark-theme .theme-toggle::before {
     cursor: pointer;
     content: "🌙";
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -495,7 +500,7 @@ section {
 
   body.dark-theme .theme-toggle::before {
     content: "🌙";
-    transform: translateX(40px);
+    transform: translateX(50px);
   }
 
   .section1 {
