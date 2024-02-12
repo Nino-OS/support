@@ -1,17 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to top, #3f51b5, #9c27b0);
-  color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: #18181b;
 }
 
 header {
   background: #3f51b545;
   text-align: center;
   padding: 2rem 0;
+}
+
+nav h1 {
+  font-size: 60px;
+  color: #fff;
+  background: transparent;
+}
+
+h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+nav i.ri-mail-send-line {
+  font-size: 60px;
+  color: #0451d5;
 }
 
 nav ul {
@@ -29,13 +42,13 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #9c27b0;
+  color: #0451d5;
 }
 
 form label {
@@ -55,7 +68,7 @@ form textarea {
 
 form button {
   background: #3f51b5;
-  color: white;
+  color: #ffffff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -71,26 +84,26 @@ form button:hover {
 footer {
   text-align: center;
   background: #303f9f;
-  color: white;
+  color: #ffffff;
   padding: 1rem 0;
   margin-top: 2rem;
-  border-top: 1px solid #9c27b0;
+  border-top: 1px solid #0451d5;
 }
 
 body.dark-theme form label {
-  color: white;
+  color: #ffffff;
 }
 
 body.dark-theme form input,
 body.dark-theme form textarea {
   background: #1a237e;
-  color: white;
-  border: 1px solid #6a1b9a;
+  color: #ffffff;
+  border: 1px solid #0451d5;
 }
 
 body.dark-theme form button {
   background: #1a237e;
-  color: white;
+  color: #ffffff;
 }
 
 body.dark-theme form button:hover {
@@ -98,41 +111,41 @@ body.dark-theme form button:hover {
 }
 
 body.dark-theme #section1 {
-  color: white;
+  color: #ffffff;
 }
 
 body.dark-theme #section1 textarea::selection {
-  background: black;
-  color: white;
+  background: #000000;
+  color: #ffffff;
 }
 
 body.dark-theme #section1 {
-  color: white;
-  background: black;
+  color: #ffffff;
+  background: #000000;
 }
 
 body.dark-theme #section1 textarea::selection {
-  background: black;
-  color: white;
+  background: #000000;
+  color: #ffffff;
 }
 
 body.dark-theme #section2 {
-  color: white;
-  background: black;
+  color: #ffffff;
+  background: #000000;
 }
 
 body.dark-theme #section2 textarea::selection {
-  background: black;
-  color: white;
+  background: #000000;
+  color: #ffffff;
 }
 
 body.dark-theme header {
-  color: white;
+  color: #ffffff;
 }
 
 body.dark-theme header::selection {
-  background: black;
-  color: white;
+  background: #000000;
+  color: #ffffff;
 }
 
 body.dark-theme .theme-toggle {
@@ -167,8 +180,6 @@ body.dark-theme .theme-toggle {
   background: #ffffff;
   color: #000000;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 .container {
   max-width: 400px;
@@ -353,7 +364,7 @@ body.dark-theme .theme-toggle {
   width: 100%;
   padding: 16px 0;
   border-radius: 15px;
-  background: #07ff5a;
+  background: #00ab39;
   color: #000000;
   font-weight: 500;
   font-size: 16px;
@@ -363,7 +374,7 @@ body.dark-theme .theme-toggle {
 }
 .send-button:hover {
   cursor: alias;
-  background: rgba(0, 164, 98, 0.709);
+  background: #03b544;
 }
 
 body.dark-theme .send-button {
@@ -413,26 +424,26 @@ section {
 }
 
 .FAQ:hover {
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
-  background-color: #6a1b9a;
+  background-color: #0451d5;
   cursor: copy;
 }
 
 .Kontakt:hover {
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
-  background-color: #6a1b9a;
+  background-color: #0451d5;
   cursor: copy;
 }
 
 .footer {
-  color: white;
+  color: #ffffff;
 }
 
 .footer:hover {
   background-color: rgba(0, 75, 251, 0.259);
-  color: black;
+  color: #000000;
 }
 
 .linC {
@@ -440,6 +451,15 @@ section {
 }
 
 @media (width < 600px) {
+  nav h1 {
+    font-size: 24px;
+  }
+
+  nav i.ri-mail-send-line {
+    font-size: 28px;
+    color: #0451d5;
+  }
+
   .section {
     display: none;
   }

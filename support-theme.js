@@ -76,30 +76,6 @@ function sendEmail() {
   return false;
 }
 
-if (localStorage.getItem("darkMode") === "enabled") {
-  enableDarkMode();
-}
-
-function toggleTheme() {
-  if (localStorage.getItem("darkMode") === "enabled") {
-    disableDarkMode();
-  } else {
-    enableDarkMode();
-  }
-}
-
-function enableDarkMode() {
-  document.body.classList.add("dark-theme");
-  document.querySelector(".theme-toggle").classList.add("active");
-  localStorage.setItem("darkMode", "enabled");
-}
-
-function disableDarkMode() {
-  document.body.classList.remove("dark-theme");
-  document.querySelector(".theme-toggle").classList.remove("active");
-  localStorage.setItem("darkMode", "disabled");
-}
-
 function scrollToElement(elementSelector) {
   const element = document.querySelector(elementSelector);
   if (element) {
