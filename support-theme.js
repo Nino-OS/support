@@ -45,7 +45,7 @@ function disableDarkMode() {
 }
 
 function redirectToMainSite() {
-  window.location.href = "https://nino-os.github.io/dashboard/";
+  window.location.href = "https://Nino-OS.github.io/";
 }
 
 function sendEmail() {
@@ -71,7 +71,7 @@ function sendEmail() {
 
   window.location.href = mailtoLink;
 
-  window.location.href = "https://nino-os.github.io/dashboard/";
+  window.location.href = "https://Nino-OS.github.io/";
 
   return false;
 }
